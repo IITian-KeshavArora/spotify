@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>       <!--Title linked-->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon"><!--Shortcut Icon linked-->
+
+    <!-- Linking the fontstyle from fonts.google.com; Fontstyle name: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap" rel="stylesheet">
+<!-- Font linked successfully -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- Linked recent icon of library successfully. -->
+
+<link rel="stylesheet" href="style.css">   <!--CSS file linked successfully-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<!-- Linked Install App button -->
+</head>      
+<body>
+
+    <!-- First of all, we will divide our webpage into 3 sections: main-content, music-player & Sidebar -->
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <button><img src="home.svg" alt="" style="opacity: 1;"></button>
+                    <a style="opacity: 1;" href="#">Home</a>
+                </div>  
+                <div class="nav-option">
+                    <button><img src="magnifying-glass.svg" alt=""></button>
+                    <a href="#">Search</a>
+                </div>          
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="library_icon.png" alt="">
+                    <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <img src="plus.svg" alt="">
+                        <img id="flexbox" src="arrow-right.svg" alt="">
+                    </div>
+                </div>
+                <div class="boxes">
+                    <button>Playlists</button>
+                    <button>Artists</button>
+                    <button>Podcasts & Shows</button>
+                </div>
+                <div class="icon-lib">
+                    <button><img src="magnifying-glass.svg" alt=""></button>
+                    <div>
+                        <span id="recent">Recents <span style="background-color: #121212; position:relative; top:6px;" class="material-symbols-outlined">list</span></span>
+                    </div>
+                    
+                </div>
+                <div class="library-cards">
+                    <div class="card1">
+                        <img src="liked_songs.jpg" alt="">
+                        <span id="liked">Liked Songs</span>
+                       <div class="Playlist" id="playlist-playing"><img id="pushpin" src="push-pin.png" alt=""><span>Playlist &bull; 15 songs</span></div>  
+                        
+                    </div>
+                    <div class="card1 artist">
+                        <img src="alan_walker.jpeg" alt="">
+                        <span id="liked">Alan Walker</span>
+                       <div id="non-liked" class="Playlist">Artist</div>  
+                        
+                    </div>
+                    <div class="card1 artist">
+                        <img src="parmish_verma.jpeg" alt="">
+                        <span id="liked">Parmish Verma</span>
+                       <div id="non-liked" class="Playlist">Artist</div>  
+                    </div>
+                    <div class="card1">
+                        <img src="bookmark.png" alt="">
+                        <span id="liked">Your Episodes</span>
+                       <div class="Playlist" id="liked-sidebar-card">Saved & downloaded episodes</div>  
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- Here is our main-content going to start -->
+        <div class="main-content">
+            <div class="header">
+                <div class="arrows">
+                    <div class="circle"></div>
+                    <div  class="circle"></div>
+                    <button><img id="left-arrow" src="backward_icon.png" alt=""></button>
+                    <button><img src="forward_icon.png" alt=""></button>
+                </div>
+                <div class="profile">
+                    <button id="explore">Explore Premium</button>
+                    <button id="install"><span id="install-app-icon" class="material-symbols-outlined">
+                        downloading
+                        </span id="install-app">&nbsp;Install App</button>
+                    <img id="bell-icon" src="bell-button.svg" alt="">
+                    <img id="profile-icon" src="profile-button.svg" alt="">
+                </div>
+            </div>
+            <h2 id="headings" style="font-size: 1.5rem;">Recently Played</h2>
+            
+
+<!-- Preparing Song Cards    -->
+
+            <div class="song-cards">
+                <div class="song">
+                    <img src="card1img.jpeg" alt="">
+                    <br>
+                    <h3>Top 50 - Global</h3>
+                    <p>Your daily update of<br>the most played<br>tracks right now - Global.</p>
+                </div>
+                <div class="song">
+                    <img src="liked_songs.jpg" alt="">
+                    <br>
+                    <h3>Liked Songs</h3>
+                    <p>15 Songs</p>
+                </div>
+                <div class="song">
+                    <img src="my playlist.png" alt="">
+                    <br>
+                    <h3>Chilling 2</h3>
+                    <p>Playlist &bull; Arnav Dubey</p>
+                </div>  
+                <div class="song">
+                    <img src="card2img.jpeg" alt="">
+                    <br>
+                    <h3>Mahiye Jinna Sohna</h3>
+                    <p>Darshan Raval</p>
+                </div>          
+            </div>
+        <h2 id="headings" style="font-size: 1.5rem;">Made for You</h2>
+            <div class="song-cards">
+                <div class="song">
+                    <img src="card3img.jpeg" alt="">
+                    <br>
+                    <h3>Mere Pass Tum Ho</h3>
+                    <p><a href="#">Rahet Fateh Ali Khan<br></a>&bull;&nbsp;Mere Pass Tum Ho &bull;&nbsp;2020&nbsp; &bull;&nbsp;4:52 &nbsp; &bull; &nbsp; 78,152</p>
+                </div>
+                <div class="song">
+                    <img src="card4img.jpeg" alt="">
+                    <br>
+                    <h3>Na Ready Ready <br> (For Leo No Alter Ego)</h3>
+                    <p><a href="#">Anandh D</a> &nbsp; &bull; 2023</p>
+                </div>
+                <div class="song">
+                    <img src="card5img.jpeg" alt="">
+                    <br>
+                    <h3>Top Songs Global</h3>
+                    <p>Your weekly update of<br>the most played tracks right now - Global.</p>
+                </div>   
+                <div class="song">
+                    <img src="card6.jpeg" alt="">
+                    <br>
+                    <h3>Your Top Songs 2023</h3>
+                    <p>Spotify Wrapped presents the songs you loved this year.</p>
+                </div>    
+                <div class="song">
+                    <img src="card7.jpeg" alt="">
+                    <br>
+                    <h3>Badnaam (Orignal Version)</h3>
+                    <p><a href="#">Mankirat Aulakh</a>&nbsp; &bull; 2017</p>
+                </div>     
+            </div>
+            
+
+        <h2 id="headings" style="font-size: 1.5rem;">Your Favorite</h2>
+            <div class="song-cards">
+                <div class="song">
+                    <img src="card8.jpeg" alt="">
+                    <br>
+                    <h3>On My Way</h3>
+                    <p><a href="#">Alan Walker</a>&bull;&nbsp;<a href="#">Sabrina Carpenter</a> , <a href="#">Farukko</a></p>
+                </div>
+                <div class="song">
+                    <img src="card9.jpeg" alt="">
+                    <br>
+                    <h3>The Nights</h3>
+                    <p><a href="#">Avicii</a></p>
+                </div>
+                <div class="song">
+                    <img src="card10.jpeg" alt="">
+                    <br>
+                    <h3>Fly Away</h3>
+                    <p><a href="#">TheFatRat</a>, <a href="#">Anjulie</a></p>
+                </div>   
+                <div class="song">
+                    <img src="card11.jpeg" alt="">
+                    <br>
+                    <h3>Legends Never Die</h3>
+                    <p>League of Legends, Against the Current</p>
+                </div>    
+                <div class="song">
+                    <img src="card12.jpeg" alt="">
+                    <br>
+                    <h3>Faded</h3>
+                    <p><a href="#">Alan Walker</a></p>
+                </div>     
+            </div>
+            
+            <div class="footer">
+                <div id="credit">
+                    <span>&copy; All Rights Reserved 2023.</span> <br>
+                <span>Made by Keshav-Arora</span>
+                </div>
+                <div class="footer-line"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    <!-- Preparing Music Player Bar -->
+    <div class="music-player">
+        <div class="player-icons">
+            <button><img src="player_icon1.png" alt=""></button>
+            <button ><img src="player_icon2.png" alt=""></button>
+            <button><img id="playbutton" src="player_icon3.png" alt=""></button>
+            <button><img src="player_icon4.png" alt=""></button>
+            <button><img src="player_icon5.png" alt=""></button>
+        </div>
+        <div class="player-line"><span>0:01</span>&nbsp;&nbsp;<div class="line"></div>&nbsp;&nbsp;<span>--</span></div>
+        
+    </div>
+
+</body>
+</html>
