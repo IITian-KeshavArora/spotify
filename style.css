@@ -602,9 +602,13 @@ button
 }
 @media (max-width:993px)
 {
-    #profile-icon, #bell-icon
+    #profile-icon, #bell-icon, #right-arrow
     {
         display:none;
+    }
+    #forward-arrow-circle
+    {
+        background-color: #121212;
     }
     .sidebar
     {
